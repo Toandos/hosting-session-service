@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Toandos/hosting-session-service/compare/v1.0.0...v1.0.1) (2026-09-28)
+
+
+### Bug Fixes
+
+* **cd:** Missing checkout ([854e355](https://github.com/Toandos/hosting-session-service/commit/854e3555ce5c42c275db8b9b67c35a27f4099251))
+
 ## 1.0.0 (2026-09-28)
 
 
