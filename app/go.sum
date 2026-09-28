@@ -1,0 +1,6 @@
+connectrpc.com/connect v1.21.0 h1:LhqSJt7jHf5NJBo9Jq/t/9FjcYAideif0mg+qe2jCUs=
+connectrpc.com/connect v1.21.0/go.mod h1:A2ygJrukXwWy32vkCAAHNVguZrqZ+jeZ9rGRnGR4dN4=
+github.com/Toandos/apis-go v0.0.0-20260927152610-94f6e03798c6 h1:S+Nb2aQBvxtEf6XzIHe25nH4ltj7czmjEaxLzi2Xp2Q=
+github.com/Toandos/apis-go v0.0.0-20260927152610-94f6e03798c6/go.mod h1:cy+i/GFfKuOOugt2lZa1AfAI+PtU0+6Nsh73FAxopyY=
+google.golang.org/protobuf v1.36.12 h1:pJOKDDOyeXErUroCihFAd5LQuwXBSpVnKGrj5o/fwxc=
+google.golang.org/protobuf v1.36.12/go.mod h1:HTf+CrKn2C3g5S8VImy6tdcUvCska2kB7j23XfzDpco=

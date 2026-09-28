@@ -1,0 +1,35 @@
+name: Release flow
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  release:
+    needs: tests
+    runs-on: ubuntu-latest
+
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      version: ${{ steps.release.outputs.version }}
+
+    steps:
+      - name: Run release please
+        uses: googleapis/release-please-action@v5
+        id: release
+        with:
+          release-type: simple
+
+  publish:
+    needs: release
+    if: needs.release.outputs.release_created == 'true'
+    uses: ./.github/workflows/publish.yml
+    with:
+      version: ${{ needs.release.outputs.version }}
+    permissions:
+      contents: read
+      packages: write
